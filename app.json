@@ -1,0 +1,23 @@
+{
+  "name": "dominos-proxy",
+  "description": "A Python Flask Dominos Pizza UK proxy service using the dominos library.",
+  "keywords": [
+    "Dominos Pizza",
+    "Dominos",
+    "Pizza",
+    "Flask"
+  ],
+  "logo": "https://cdn.tomasbasham.co.uk/dominos-proxy.svg",
+  "repository": "https://github.com/tomasbasham/dominos-proxy",
+  "env": {
+    "WEB_CONCURRENCY": {
+      "description": "The number of processes to run.",
+      "value": "3"
+    }
+  },
+  "addons": [
+    "keen:developer",
+    "papertrail:choklad",
+    "rollbar:free"
+  ]
+}
