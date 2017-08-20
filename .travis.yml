@@ -1,5 +1,4 @@
 language: python
-
 python:
   - "2.7"
   - "3.2"
@@ -18,3 +17,11 @@ notifications:
   email: false
   slack:
     secure: "oyd4rpOou5rXufOrSVXoyMZxKd1rgldgjbnhqBNyNbg9IxNjue2Xc/jguzKALlAPUXM/ClPy2QuubjOX3pIhWI1zU6DJ0u8wnykxxFqna6XnEX2rijgp3dWaK7rbWMrNQOwWdwhZIHk8Bzn68IeWC5KLGx+xsbmXqWldli5WVozQONEsMaymBgGo/allLwWR0966jst9lNg7BjezSSWoY9PUTllNwQymWbrhgYypNAS/yG+X8Sy66EKISu9r96drPBXkHVtll1nBxgBqa34CC2H3sOsyCvKqGiM+w/LhTF5eLrr6VFD2HqfwSH1hRWNcd4vZeWLw4GgN1AohdTf9nUvHAMkbcDgsnmBI3h3yBUorRQpWpowiAinJceNwfWsFJg7N1LZmNqxX9g80TrJi8XDucEXstje7sh53XR1vuGRg5x/s6M8bTdEWQ6GSR7fYVmJugl+VV8UcGKy0IVBJicFOqIxEpSkiP095qCjM7PUcY1H/b4k/umsnpEGbWnm+WJl3anDO2P/MBbn8EXOUiBEu/3ASM1mYzM66Ct8DecGpOjx0cxTwsUZgQHw3YedPjPUd73J30PEvU7WqpOyaun7hTXu8qGJod6Zn77SBeATJuAa83Qtw9jbFK//dPyzVjtuztVF050uLh8XOc6A+MlGAfpcZLlVyTiPXLoAm2N0="
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "XsLJLlUvcioujZcIgsriuzmHSEuC2E6550J6QcpVGzSjWp40vPw3n778EsmKrFF+7NFIWx2u1hJ+4jE1wmcEpTT7RAiJAsFucI4KaEvRpep1Mhd3Jr1ODLKrWb0ijJ7IOKnH8pM3toMkgTrGOiZhY+8IEP+8c+9m1KJv/6/tWkw3cqwc+5Yy+awdw1EmHl44LIaXv1oqMbOAZHs+cQ/NxDqvuCRU0OdnKrJjR5ZE8FbC6Wnw1+fj2UE0rvKB6TPcmsvIfc9WbKOkjbVdMe2BxWs8DpyQPlO/74iUjtznR86/VgmchXuu66ELZUvkadZWVw0tKzv1XXmeSLgDYx3Zdqg+aa/LvKv4o3Qo99z+FDtYAE/xyCIkDhXWNfJkwbWPt/2Ok/GOs+If0qCLlI0IpttePSC0qz3Ix5bhsNweJLx+RsWTix/5pJbW1hGQzKl8GsPmh3J7D1x1sPcuuZo6bLdiARLcnU/yax987Lv3rrlZBOY97TTqqqcyeI+/c4pHplzrtN53PZH9rd3srLTMz41iODWau3IDUb304hNNXB1PlLB5I+joZnkTdngPWkRt/NGVJWKFh8lAj/CPSipGfPlIL0/f2cXOwN5b5tJm+Swi63+QvYTM3q+MC7ouZDVv9JCizQyNNCB7qkFQQ4dJHJQOS59qtNXoeCy9dpa+jGc="
+  app: dominos-proxy
+  on:
+    repo: tomasbasham/dominos-proxy
